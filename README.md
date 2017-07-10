@@ -1,4 +1,4 @@
-# base64-breaker
+# base64-decoder-encoder
 Simple base64 decoder/encoder written in Python using bottle
 
 ---
