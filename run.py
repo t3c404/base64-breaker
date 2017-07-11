@@ -26,4 +26,4 @@ def error404(error):
     return json.dumps([{'ERROR' : '404'}, {'encode' : '/encode/<string>'}, {'decode' : '/decode/<string>'}])
     #return '<h1> nothing here! \n</h1>' + '<h4>use:\n</h4>' + '/encode/&ltstring&gt' + '<h6></h6>\n' + '<h>/decode/&ltstring&gt</h>'
 
-run(host='localhost', port=8080)
+run(host='127.0.0.1', port=8080)
