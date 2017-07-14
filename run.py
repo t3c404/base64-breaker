@@ -18,11 +18,11 @@ def enable_cors(fn):
 
 app = bottle.app()
 
-@app.route('/encode/<encode>', method='POST')
+@app.route('/encode/<encode>', method='GET')
 @enable_cors
 def encode(encode):
-    encode = base64.b64encode(encode)
-    return { 'result' : encode }
+    inputS = base64.b64encode(encode)
+    return { encode : inputS }
 
 @app.route('/decode/<decode>', method='GET')
 @enable_cors

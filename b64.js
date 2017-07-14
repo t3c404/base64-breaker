@@ -26,20 +26,37 @@ $(function() {
 
 
   $('#button').on('click', function() {
-    var result = {
+    /*var result = {
       textfield: $textfield.val(),
     };
 
+    console.log($textfield.val());
+    */
+
     $.ajax({
-      type: 'POST',
-      url: 'http://localhost:8080/encode/' + textfield,
-      data: result,
+      type: 'GET',
+      url: 'http://localhost:8080/encode/' + $textfield.val(),
+      ///data: result,
       success: function(newResult) {
         console.log('success', newResult);
-        $results.append('<li> result: ' + newResult.result + ' </li>');
+        $results.append('<li> encode: ' + newResult.result + ' </li>');
       },
       error: function() {
         alert('error saving result');
+      }
+    });
+
+    $.ajax({
+      type: 'GET',
+      url: 'http://localhost:8080/decode/' + $textfield.val(),
+      ///data: result,
+      success: function(newResult) {
+        console.log('success', newResult);
+        $results.append('<li> decode: ' + newResult.result + ' </li>');
+      },
+      error: function() {
+        console.log('failed', newResult);
+        $results.append('<li> decode: ' + newResult.result + ' </li>');
       }
     });
 
