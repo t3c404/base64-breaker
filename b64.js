@@ -9,11 +9,11 @@ $(function() {
     type: 'GET',
     dataType: 'json',
     crossDomain:true,
-    url: 'http://localhost:8080/encode/' + results,
+    url: 'http://localhost:8080/encode/foobar',
     success: function(results) {
       console.log('success', results);
       $.each(results, function(i, result) {
-        $results.append('<li> result: ' + result + ' </li>');
+        $results.append('<li>' + i + ' : ' + result + ' </li>');
       });
     },
     error: function() {
@@ -26,37 +26,20 @@ $(function() {
 
 
   $('#button').on('click', function() {
-    /*var result = {
+    var result = {
       textfield: $textfield.val(),
     };
-
-    console.log($textfield.val());
-    */
 
     $.ajax({
       type: 'GET',
       url: 'http://localhost:8080/encode/' + $textfield.val(),
-      ///data: result,
+      data: result,
       success: function(newResult) {
         console.log('success', newResult);
-        $results.append('<li> encode: ' + newResult.result + ' </li>');
+        $results.append('<li>' + $textfield.val() + ' : ' + newResult.result + ' </li>');
       },
       error: function() {
         alert('error saving result');
-      }
-    });
-
-    $.ajax({
-      type: 'GET',
-      url: 'http://localhost:8080/decode/' + $textfield.val(),
-      ///data: result,
-      success: function(newResult) {
-        console.log('success', newResult);
-        $results.append('<li> decode: ' + newResult.result + ' </li>');
-      },
-      error: function() {
-        console.log('failed', newResult);
-        $results.append('<li> decode: ' + newResult.result + ' </li>');
       }
     });
 

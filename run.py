@@ -21,8 +21,8 @@ app = bottle.app()
 @app.route('/encode/<encode>', method='GET')
 @enable_cors
 def encode(encode):
-    inputS = base64.b64encode(encode)
-    return { encode : inputS }
+    encode = base64.b64encode(encode)
+    return { 'result' : encode }
 
 @app.route('/decode/<decode>', method='GET')
 @enable_cors
@@ -33,7 +33,7 @@ def decode(decode):
 @error(500)
 @enable_cors
 def error500(error):
-    response.status = 500
+    response.status = 200
     response.content_type = 'application/json'
     return json.dumps({'result' : 'not found!'})
     #return '<h1> not found! \n</h1>' + '<h4>use:\n</h4>' + '/encode/&ltstring&gt' + '<h6></h6>\n' + '<h>/decode/&ltstring&gt</h>'
