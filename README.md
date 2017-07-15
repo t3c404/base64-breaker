@@ -14,7 +14,7 @@ the next points are just necessary when you don't use docker
 
 ---
 
-## Docker
+## Docker (not working yet)
 1. open `run.py` and change `host='127.0.0.1'` to `host='0.0.0.0'`
 2. build container: `sudo docker build -t base64 .`
 3. run: `sudo docker run -p 8080:8080 --name base64 base64` (just once)
