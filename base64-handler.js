@@ -3,6 +3,9 @@
 var $results = $('#results');
 var $textfield = $('#textfield');
 
+var encode = 'Encoded'.bold();
+var decode = 'Decoded'.bold();
+
 $(function() {
 /*console.log('test2');
   $.ajax({
@@ -32,7 +35,7 @@ $(function() {
       data: result,
       success: function(newResult) {
         //console.log('success', newResult);
-        $results.append('<li>' + 'encode | ' + $textfield.val() + ' : ' + newResult.result + ' </li>');
+        $results.append('<li>' + encode + '(' + $textfield.val() + ')' + ' : ' + newResult.result + ' </li>');
       },
       error: function() {
         alert('error saving result');
@@ -45,7 +48,7 @@ $(function() {
       data: result,
       success: function(newResult) {
         //console.log('success', newResult);
-        $results.append('<li>' + 'decode | '  + $textfield.val() + ' : ' + newResult.result + ' </li>');
+$results.append('<li>' + decode + '(' + $textfield.val() + ')' + ' : ' + newResult.result + ' </li>');
       },
       error: function() {
         alert('error saving result');

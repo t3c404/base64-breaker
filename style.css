@@ -1,25 +1,17 @@
 body {
-	background: darkgrey;
+	background: rgb(128,128,128);
 }
 
-input[type="text"]
-{
-	position:absolute;
-	width:200px;
-	height:20px;
-	left:100px;
-	top:75px;
+.titel {
+    text-align: center;
+		border-style: ridge;
 }
 
-button
-{
-	position:absolute;
-	left:10px;
-	top:75px;
+.wrapper {
+    text-align: center;
+		top: 100px;
 }
 
 ul {
-	position:absolute;
-	top: 65px;
-	left: 500px;
+	text-align: center;
 }
