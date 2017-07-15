@@ -10,15 +10,10 @@ the next points are just necessary when you don't use docker
 
 1. install bottle: `pip install bottle`
 2. run: `python run.py` 
-
-#### decode
-localhost:8080/decode/\<string>
-
-#### encode
-localhost:8080/encode/\<string>
+3. open `index.html` (break the string and you get back the decoded and encoded resutl)
 
 ---
-
+<NOT WORKING YET>
 ## Docker
 1. open `run.py` and change `host='127.0.0.1'` to `host='0.0.0.0'`
 2. build container: `sudo docker build -t base64 .`
