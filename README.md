@@ -1,5 +1,5 @@
 # base64-decoder-encoder
-Simple base64 decoder/encoder written in Python using bottle
+Simple base64-decoder-encoder written in Python using bottle. Offers an HTML frontend and an API.
 
 ---
 
