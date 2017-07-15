@@ -10,7 +10,7 @@ the next points are just necessary when you don't use docker
 
 1. install bottle: `pip install bottle`
 2. run: `python run.py` 
-3. open `index.html` (break the string and get back the decoded and encoded result)
+3. url: `0.0.0.0:8080/` (refresh page to clear the list)
 
 ---
 
@@ -19,4 +19,4 @@ the next points are just necessary when you don't use docker
 2. run: `sudo docker run -p 8080:8080 --name base64 base64` (just once)
 3. start container: `sudo docker start base64`
 4. stop container: `sudo docker stop base64`
-5. open `index.html` (break the string and get back the decoded and encoded result)
+5. url: `0.0.0.0:8080/` (refresh page to clear the list)

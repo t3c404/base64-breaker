@@ -1,5 +1,5 @@
 import bottle
-from bottle import run, route, response, error, template, request
+from bottle import run, route, response, error, template, request, static_file
 import json
 import base64
 
@@ -17,6 +17,21 @@ def enable_cors(fn):
     return _enable_cors
 
 app = bottle.app()
+
+@app.route('/')
+@enable_cors
+def index():
+    return template('index.html')
+
+@app.route('/<filename:re:.*\.css>')
+@enable_cors
+def stylesheets(filename):
+    return static_file(filename, root='')
+
+@app.route('/<filename:re:.*\.js>')
+@enable_cors
+def stylesheets(filename):
+    return static_file(filename, root='')
 
 @app.route('/encode/<encode>', method='GET')
 @enable_cors
