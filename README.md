@@ -10,7 +10,7 @@ the next points are just necessary when you don't use docker
 
 1. install bottle: `pip install bottle`
 2. run: `python run.py` 
-3. open `index.html` (break the string and you get back the decoded and encoded resutl)
+3. open `index.html` (break the string and get back the decoded and encoded result)
 
 ---
 
