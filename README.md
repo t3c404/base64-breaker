@@ -5,7 +5,7 @@ Is also for encoding!
 ---
 
 ## Installation
-1. clone the repo: `https://github.com/t3c404/base64-decoder.git`
+1. clone the repo: `git clone https://github.com/t3c404/base64-decoder.git`
 ---
 the next points are just necessary when you don't use docker
 
