@@ -1,30 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-      <meta content="utf-8" http-equiv="encoding">
-      <meta http-equiv="Access-Control-Allow-Origin" content="*">
-      <header name = "Access-Control-Allow-Origin" value = "*" />
-      <title> Base64 decoder - encoder </title>
-	    <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
+  <head>
+    <!--<script src="css/style.css"></script>-->
+    <title> Base64 decoder - encoder </title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <!--<meta content="utf-8" http-equiv="encoding">-->
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <header name = "Access-Control-Allow-Origin" value = "*" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <!--<script src="js/bootstrap.min.js"></script>-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+  </head>
 
-<body>
-  <div class='titel'>
-    <h1> ༼∵༽ ༼⍨༽ ༼⍢༽ ༼⍤༽  Base64 decoder - encoder  ༼∵༽ ༼⍨༽ ༼⍢༽ ༼⍤༽ </h1>
-    <h5>by t3c404</h5>
-  </div>
-  <div class='wrapper'>
-    <input type="text" id="textfield" />
-    <button id="button" >break</button>
-  </div>
-    <ul id="results">
-      <!--<li>result: foobar=</li>
-      <li>result: Zm9vYmFy</li>-->
-    </ul>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="base64-handler.js" ></script>
+  <body>
+    <div class="container">
 
+      <div class="jumbotron">
+        <div id="websiteTitel"> Base64 decoder-encoder </div>
+      </div>
 
-</body>
+      <div class="form-group">
+        <input type="text" class="form-control" id="textfield">
+      </div>
+
+      <div class="button">
+        <button type="button" class="btn btn-primary" id="button">break</button>
+      </div>
+
+      <br></br>
+
+      <table class="table table-bordered table-striped table-hover" id="results">
+        <thead>
+          <tr>
+            <th>String</th>
+            <th>Decoded</th>
+            <th>Encoded</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+
+    </div>
+
+    <script type="text/javascript" src="js/base64-handler.js" ></script>
+  </body>
 </html

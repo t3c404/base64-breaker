@@ -1,0 +1,25 @@
+#websiteTitel {
+	font-size: 35px;
+	font-weight: bold;
+	font-family: 'Orbitron', sans-serif;
+	text-align: center;
+	color: blue;
+}
+
+#textfield {
+	text-align: center;
+}
+
+.button {
+	text-align: center;
+}
+
+.table {
+	table-layout: fixed;
+}
+
+td {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+}
