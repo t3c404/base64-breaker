@@ -35,7 +35,7 @@ $(function() {
       data: result,
       success: function(newResult) {
         //console.log('success', newResult);
-        $results.append('<tr>' + '<td>' + $textfield.val() + '</td>'+ '<td>' + '' + '</td>' + '<td>' + newResult.result + '</td>' + ' </tr>');
+        $results.append('<tr>' + '<td>' + $textfield.val() + '<td> base64 encode </td>'+ '<td>' + newResult.result + '</td>' + ' </tr>');
         //$results.append('<li>' + encode + '(' + $textfield.val() + ')' + ' : ' + newResult.result + ' </li>');
       },
       error: function() {
@@ -48,14 +48,13 @@ $(function() {
       url: 'http://0.0.0.0:4000/decode/' + $textfield.val(),
       data: result,
       success: function(newResult) {
-        //console.log('success', newResult);
-      $results.append('<tr>' + '<td>' + $textfield.val() + '</td>'+ '<td>' + newResult.result + '</td>' + '<td>' + '' + '</td>' + ' </tr>');
+      //console.log('success', newResult);
+      $results.append('<tr>' + '<td>' + $textfield.val() + '<td> base64 decode </td>'+ '<td>' + newResult.result + '</td>' + ' </tr>');
       },
       error: function() {
         alert('error saving result');
       }
     });
-
 
   });
 
