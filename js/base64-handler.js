@@ -31,7 +31,7 @@ $(function() {
 
     $.ajax({
       type: 'GET',
-      url: 'http://0.0.0.0:8080/encode/' + $textfield.val(),
+      url: 'http://0.0.0.0:4000/encode/' + $textfield.val(),
       data: result,
       success: function(newResult) {
         //console.log('success', newResult);
@@ -45,7 +45,7 @@ $(function() {
 
     $.ajax({
       type: 'GET',
-      url: 'http://0.0.0.0:8080/decode/' + $textfield.val(),
+      url: 'http://0.0.0.0:4000/decode/' + $textfield.val(),
       data: result,
       success: function(newResult) {
         //console.log('success', newResult);

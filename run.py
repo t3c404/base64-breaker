@@ -60,6 +60,6 @@ def error404(error):
     response.content_type = 'application/json'
     return json.dumps([{'ERROR' : '404'}, {'encode' : '/encode/<string>'}, {'decode' : '/decode/<string>'}])
     #return '<h1> nothing here! \n</h1>' + '<h4>use:\n</h4>' + '/encode/&ltstring&gt' + '<h6></h6>\n' + '<h>/decode/&ltstring&gt</h>'
-    
-app.run(host='0.0.0.0', port=8080)
+
+app.run(host='0.0.0.0', port=4000)
 #run(host='127.0.0.1', port=8080)
