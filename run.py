@@ -50,7 +50,7 @@ def decode(decode):
 def error500(error):
     response.status = 200
     response.content_type = 'application/json'
-    return json.dumps({'result' : 'not found!'})
+    return json.dumps({'result' : 'not found'})
     #return '<h1> not found! \n</h1>' + '<h4>use:\n</h4>' + '/encode/&ltstring&gt' + '<h6></h6>\n' + '<h>/decode/&ltstring&gt</h>'
 
 @error(404)
