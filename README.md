@@ -1,5 +1,4 @@
-# Base64 Decoder [![Build Status](https://travis-ci.org/t3c404/base64decoder.svg?branch=master)](https://travis-ci.org/t3c404/base64decoder)
-</br>
+# Base64 Decoder [![Build Status](https://travis-ci.org/t3c404/base64decoder.svg?branch=master)](https://travis-ci.org/t3c404/base64decoder) 
 Simple Base64 Decoder written in Python using bottle. Offers an HTML frontend and an API.
 Works also for encoding!
 
