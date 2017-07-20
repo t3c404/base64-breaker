@@ -1,6 +1,6 @@
 # Base64 Decoder
 Simple Base64 Decoder written in Python using bottle. Offers an HTML frontend and an API.
-Is also for encoding!
+Works also for encoding!
 
 ---
 
