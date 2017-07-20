@@ -18,7 +18,11 @@ the next points are just necessary when you don't use docker
 
 ## Docker
 1. build container: `sudo docker build -t base64 .`
-2. run: `sudo docker run -p 4000:4000 --name base64 base64` (just once)
-3. start container: `sudo docker start base64`
-4. stop container: `sudo docker stop base64`
+2. run: `docker run -p 4000:4000 --name base64 base64` (just once)
+3. start container: `docker start base64`
+4. stop container: `docker stop base64`
 5. url: `0.0.0.0:4000` (refresh page to clear the list)
+
+## Docker (docker-compose)
+1. run: `docker-compose build` (just once)
+2. run: `docker-compose up`
