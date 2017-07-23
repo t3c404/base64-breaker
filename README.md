@@ -20,6 +20,7 @@ the next points are just necessary when you don't use docker
 1. install [docker-compose](https://docs.docker.com/compose/install/)
 2. run: `docker-compose build` (just once)
 3. run: `docker-compose up`
+4. url: `0.0.0.0:4000` (refresh page to clear the list)
 
 ---
 
